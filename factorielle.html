@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROBLEME 2</title>
+</head>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    body{
+        font-family: 'Poppins', sans-serif;
+         background: #eae70f;
+    }
+    .block {
+            position: relative;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 60%;
+            height: 40%;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+    button {
+            background-color: #0074D9;
+            color: #FFFFFF;
+            border-radius: 10px;
+            padding: 10px 30px;
+            cursor: pointer;
+            font-size: 22px;
+            border: none;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #333;
+        }
+        input[type="text"] {
+            width: 300px;
+            font-size: 22px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 2px solid;
+            margin-bottom: 10px;
+        }
+        .container {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 99vh;
+            width: 100%;
+        } 
+</style>
+<body>
+    <div class="container">
+    <div class="block">
+    <h1>Factorielle d'un nombre</h1>
+            <p>Entrez un nombre entier</p>
+            <input type="text" id="factorialInput" >
+            <button onclick="calculateFactorial()">Calculer</button>
+            <div class="result" id="factorialResult"></div>
+        </div>
+    </div>
+    <script src="facto.js"></script>
+</body>
+</html>
